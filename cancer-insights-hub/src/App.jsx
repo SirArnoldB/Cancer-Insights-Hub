@@ -2,8 +2,10 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import WelcomeContent from "./section_content/welcome";
-import CardGrid from "./components/CardGrid";
 import StatisticsContent from "./section_content/statistics";
+import ResearchContent from "./section_content/research";
+import NewsContent from "./section_content/news";
+import ResourcesContent from "./section_content/resources";
 
 export default function App() {
   return (
@@ -25,16 +27,19 @@ export default function App() {
         id="research"
         class_name="section-content"
         title="Cancer Research"
+        section_content={<ResearchContent />}
       />
       <Section
         id="news"
         class_name="section-content"
         title="Cancer News and Events"
+        section_content={<NewsContent />}
       />
       <Section
         id="resources"
         class_name="section-content"
         title="Cancer Resources"
+        section_content={<ResourcesContent />}
       />
     </div>
   );

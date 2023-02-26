@@ -8,6 +8,7 @@ const Menuitem = (props) => {
         className="navbar__menu__link"
         smooth={true}
         spy={true}
+        offset={-80}
       >
         {props.title}
       </Link>

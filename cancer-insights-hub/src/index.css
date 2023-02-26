@@ -63,9 +63,21 @@ h2 {
 .MuiGrid-container,
 .MuiGrid-spacing-xs-2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-media {
+  height: 140px;
+}
+
+.card-content {
+  height: calc(100% - 140px);
 }

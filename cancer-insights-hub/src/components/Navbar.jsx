@@ -1,12 +1,13 @@
 import { Link } from "react-scroll";
 import Menuitem from "./Menuitem";
+import logo from "../assets/images/cih_logo.png";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
         <Link to="home" className="navbar__logo" smooth={true}>
-          CIS
+          <img src={logo} alt="Cancer Insights Hub Logo" />
         </Link>
         <ul className="navbar__menu">
           <Menuitem dest="statistics" title="Statistics" />

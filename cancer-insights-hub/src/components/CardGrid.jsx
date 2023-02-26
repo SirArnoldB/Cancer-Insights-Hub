@@ -21,7 +21,7 @@ const CardGrid = (props) => {
               <CardMedia
                 component="img"
                 alt={card.title}
-                height="140"
+                height="300"
                 image={card.image}
                 title={card.title}
               />

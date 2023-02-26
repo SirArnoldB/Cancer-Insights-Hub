@@ -43,6 +43,12 @@ section {
   text-transform: uppercase;
 }
 
+.navbar__logo img {
+  margin-right: 5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
 .navbar__menu {
   display: flex;
   align-items: center;
