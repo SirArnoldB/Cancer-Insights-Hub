@@ -1,0 +1,70 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+section {
+  font-size: 30px;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 24px;
+  z-index: 1;
+}
+
+.navbar__logo {
+  color: #000;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+}
+
+.navbar__menu__item {
+  height: 80px;
+}
+
+.navbar__menu__link {
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navbar__menu__link:hover {
+  color: #092fef;
+}
