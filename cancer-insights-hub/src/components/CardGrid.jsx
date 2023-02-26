@@ -3,6 +3,7 @@ import {
   Grid,
   Card,
   CardActionArea,
+  CardActions,
   CardMedia,
   CardContent,
   Typography,
@@ -13,7 +14,7 @@ const CardGrid = (props) => {
   console.log(props);
   const cards = props.cards;
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={5}>
       {cards.map((card) => (
         <Grid item xs={12} sm={6} md={3} key={card.id}>
           <Card className="card">
@@ -36,7 +37,13 @@ const CardGrid = (props) => {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <Button href={card.link} size="small" color="primary">
+            <Button
+              className="card-button"
+              href={card.link}
+              variant="outlined"
+              size="small"
+              color="primary"
+            >
               Learn More
             </Button>
           </Card>

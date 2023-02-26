@@ -40,7 +40,7 @@ h2 {
 }
 
 #home {
-  background-image: url(/src/assets/images/cancerImage.jpg);
+  background-image: url(/src/assets/images/home_background.jpg);
   background-size: cover;
   display: grid;
   justify-content: end;
