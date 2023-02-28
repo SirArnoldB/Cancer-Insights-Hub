@@ -36,7 +36,6 @@ h2 {
   left: 0;
   right: 0;
   z-index: 100;
-  /* border-bottom: 1px solid #ddd; */
 }
 
 #home {
@@ -67,17 +66,28 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  align-items: stretch;
+  align-items: normal;
 }
 
 .card {
-  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 90% !important;
+  padding-bottom: 2rem !important;
+  border: 0.19rem solid #ffffff !important;
 }
 
-.card-media {
-  height: 140px;
+.MuiCardMedia-img {
+  object-fit: fill !important;
 }
 
-.card-content {
-  height: calc(100% - 140px);
+.MuiGrid-spacing-xs-8>.MuiGrid-item {
+  padding-right: 0.1rem !important;
+}
+
+.card-button {
+  width: 100% !important;
+  max-width: 50% !important;
+  align-self: center !important;
 }

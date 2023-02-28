@@ -14,7 +14,7 @@ const CardGrid = (props) => {
   console.log(props);
   const cards = props.cards;
   return (
-    <Grid container spacing={5}>
+    <Grid container spacing={8}>
       {cards.map((card) => (
         <Grid item xs={12} sm={6} md={3} key={card.id}>
           <Card className="card">
